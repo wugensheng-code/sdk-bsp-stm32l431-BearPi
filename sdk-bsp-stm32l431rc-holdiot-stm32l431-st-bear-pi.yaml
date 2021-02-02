@@ -7,7 +7,7 @@ board:
   description_zh: 小熊派BearPi开发板是专门为华为打造的物联网开发板
   emulator_machine: ''
   large_image: documents/images/board_large.png
-  name: STM32L431-HoldIOT-BEAR-PI
+  name: STM32L431-HOLDIOT-BEAR-PI
   price_cn: 198 CNY
   price_global: 30.69 USD
   sale_contact_cn: http://www.holdiot.com/product/showproduct.php?id=26
