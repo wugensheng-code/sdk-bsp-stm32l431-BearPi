@@ -1,0 +1,106 @@
+board:
+  buy_url_cn: https://item.taobao.com/item.htm?spm=a230r.1.14.26.66ae7d10tF2I6s&id=589971376261&ns=1&abbucket=4#detail
+  buy_url_global: https://item.taobao.com/item.htm?spm=a230r.1.14.26.66ae7d10tF2I6s&id=589971376261&ns=1&abbucket=4#detail
+  debug_interface: SWD
+  debugger: ST-LINK
+  description_en: Bear PI is an IOT development board specially built for Huawei
+  description_zh: 小熊派BearPi开发板是专门为华为打造的物联网开发板
+  emulator_machine: ''
+  large_image: documents/images/board_large.png
+  name: STM32L431-HoldIOT-BEAR-PI
+  price_cn: 198 CNY
+  price_global: 30.69 USD
+  sale_contact_cn: http://www.holdiot.com/product/showproduct.php?id=26
+  sale_contact_global: http://www.holdiot.com/product/showproduct.php?id=26
+  small_image: documents/images/board_small.png
+  vendor: HoldIOT
+  version: 1.0.0
+chip:
+  chip_name: STM32L431RC
+  clock_source: HSE
+  device_vendor: STMicroelectronics
+  family_name: STM32
+  rx_name: PA10
+  series_name: STM32L4
+  source_freq: '8000000'
+  sub_series_name: STM32L431
+  target_freq: '240000000'
+  tx_name: PA9
+  uart_name: UART1
+docs: []
+example_projects: []
+features:
+- 'MCU: stm32l431rc, main frequency 80MHz, 256Kb flash, 64KB ram.'
+- 'Common interface: USB supports three different interfaces: virtual COM port, mass
+  storage and debug port.'
+- 'Debug interface: on board st-link / V2-1 debugger'
+- 'SPI FLASH: 8M'
+- 'Key: 2 function keys and 1 reset key'
+- Support E53 series sensor case expansion board
+- 'LCD: 240 * 240 tft'
+- 'Led: a user led, power on indicator, Download light'
+features_zh:
+- MCU：STM32L431RC，主频 80MHz，256KB FLASH ，64KB RAM
+- 常用接口：USB 支持 3 种不同接口：虚拟 COM 端口、大容量存储和调试端口
+- 调试接口：板载 ST-LINK/V2-1 调试器
+- 'SPI FLASH: 8M'
+- 按键：2个功能键，一个复位按键
+- 支持E53系列传感器案例扩展板
+- 'LCD: 240 * 240 tft'
+- LED：一个用户LED， 上电指示灯，下载灯
+pkg_type: Board_Support_Packages
+pkg_vendor: RT-Thread
+pkg_version: 1.0.0
+template_projects:
+- builtin_files:
+  - files_and_folders:
+    - .config
+    - .cproject
+    - .gitignore
+    - .project
+    - .settings
+    - applications
+    - board
+    - cconfig.h
+    - figures
+    - Kconfig
+    - libraries
+    - makefile.targets
+    - project.ewd
+    - project.ewp
+    - project.eww
+    - project.uvoptx
+    - project.uvprojx
+    - README.md
+    - rtconfig.h
+    - rtconfig.py
+    - rtconfig_preinc.h
+    - SConscript
+    - SConstruct
+    - template.ewp
+    - template.eww
+    - template.uvoptx
+    - template.uvprojx
+    source_path_offset: project_0
+    target_path_offset: ''
+  external_files:
+  - files_and_folders:
+    - components
+    - include
+    - libcpu/arm
+    - libcpu/Kconfig
+    - libcpu/SConscript
+    - src
+    - tools
+    - Kconfig
+    - LICENSE
+    package_name: RT-Thread
+    package_type: RT-Thread_Source_Code
+    package_vendor: ''
+    package_version: latest
+    source_path_offset: rt-thread
+    target_path_offset: rt-thread
+  project_description: 小熊派 BearPI BSP
+  project_name: Bear PI
+  project_type: rt-thread|@full|@latest
+yaml_version: 3
